@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var arr=[10, 1, 42, 36, 4, 75, 6, 97, 81, 19, 10];
+    var sum=0;
+    for(var i=0;i<arr.length;i++)sum+=arr[i];
+    console.log(sum);
+    console.log(Math.min(arr));
+    console.log(Math.max(arr));
+    var flag=false;
+    var primes= arr.filter(function(x) {
+    var flag=true;
+ for(var i=2;i<=Math.sqrt(x);i++){
+     if(x%i==0){flag=false;break;}
+ }
+ if(flag&&x!=1)return x;
+})
+if(prime.length<arr.length)console.log("List is full of prime no");
+if(prime.length>0)console.log("List is full of prime no");
+
+</script>
+</html>
