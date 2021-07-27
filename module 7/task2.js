@@ -17,7 +17,7 @@
 var table = document.getElementById("tab");
     var cells = table.getElementsByTagName('td');
     var totalrows=table.getElementsByTagName('tr');
-    var columnsize=cells/totalrows;
+    var columnsize=cells.length/totalrows.length;
     for (var i = 0; i < cells.length; i++) {
         // Take each cell
         var cell = cells[i];
@@ -28,7 +28,7 @@ var table = document.getElementById("tab");
 
             var rc=this.cellIndex;
             
-            var rowSelected = table.getElementsByTagName('td')[rowId*3+rc];
+            var rowSelected = table.getElementsByTagName('td')[rowId*columnsize+rc];
            
             console.log(rowSelected.length);
             var x=rowSelected.style.backgroundColor;
